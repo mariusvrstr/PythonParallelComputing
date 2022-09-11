@@ -4,6 +4,11 @@ import random
 from datetime import datetime
 from threading import Thread
 
+'''
+In this example it is shown how running activities with i/o & wait time can still
+have big performance improvements even though the GIL blocks concurrent CPU time
+'''
+
 # Used to track time spent in specific activities
 class Stopwatch:
     start_time = None
